@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="player">
+        <img src="headphones.svg" alt="headphone image">
+        <audio id="player">
+            <source id="source">
+                Audio not supported
+        </audio>
+
+        <div id="controls">
+            <p id="currentSong"></p>
+            <div class="conttrols_wrapper">
+                <span>&#9658;</span>
+                <span>&#10074;&#10074;</span>
+            </div>
+            <p>Volume:</p>
+            <div class="volume">
+                <span>-</span>
+                <input type="range" min="0" max="1" step="0.01" id="volumeSlider">
+                <span>+</span>
+            </div>
+        </div>
+
+        <h2>My Songs:</h2>
+        <div id="songList">
+            <ol>
+                <li>Rema-Bad-Commando.mp3</li>
+                <li>Rema-Lady.mp3</li>
+                <li>Rema-Rewind.mp3</li>
+                <li>Rema-Spaceship-Jocelyn.mp3</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
