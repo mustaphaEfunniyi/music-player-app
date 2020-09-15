@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Music Player</title>
 </head>
 <body>
@@ -17,8 +18,8 @@
         <div id="controls">
             <p id="currentSong"></p>
             <div class="controls_wrapper">
-                <span>&#9658;</span>
-                <span>&#10074;&#10074;</span>
+                <span id="playAudio">&#9658;</span>
+                <span id="pauseAudio">&#10074;&#10074;</span>
             </div>
             <p>Volume:</p>
             <div class="volume">
@@ -29,14 +30,7 @@
         </div>
 
         <h2>My Songs:</h2>
-        <div id="songList">
-            <ol>
-                <li>Rema-Bad-Commando.mp3</li>
-                <li>Rema-Lady.mp3</li>
-                <li>Rema-Rewind.mp3</li>
-                <li>Rema-Spaceship-Jocelyn.mp3</li>
-            </ol>
-        </div>
+        <div id="songList"></div>
     </div>
 </body>
 </html>
