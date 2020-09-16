@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" 
+        rel="stylesheet">
     <script src="app.js" defer></script>
     <title>Music Player</title>
 </head>
 <body>
     <div class="player">
-        <img src="headphones.svg" alt="headphone image">
-        <audio id="player">
+        <img src="headphones.svg" alt="headphone image" id="headphones">
+        <audio id="player" ontimeupdate="updateProgress()">
             <source id="source">
                 Audio not supported
         </audio>
+
+        <progress id="progress" value="0" max="100"></progress>
 
         <div id="controls">
             <p id="currentSong"></p>
